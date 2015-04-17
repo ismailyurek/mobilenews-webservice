@@ -1,0 +1,65 @@
+<ehcache xsi:noNamespaceSchemaLocation="ehcache.xsd"
+        updateCheck="true"
+        monitoring="autodetect"
+        dynamicConfig="true"
+        maxBytesLocalHeap="200M">
+
+    <diskStore path="java.io.tmpdir"/>
+
+    <cache name="images"
+           maxBytesLocalHeap="40M"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="120"
+           overflowToDisk="true"
+           maxEntriesLocalDisk="1000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="120"
+           memoryStoreEvictionPolicy="LRU"/>
+
+    <cache name="products"
+           maxBytesLocalHeap="40M"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="60"
+           overflowToDisk="true"
+           maxEntriesLocalDisk="1000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="120"
+           memoryStoreEvictionPolicy="LRU"/>
+
+    <cache name="catalogues"
+           maxBytesLocalHeap="40M"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="60"
+           overflowToDisk="true"
+           maxEntriesLocalDisk="1000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="120"
+           memoryStoreEvictionPolicy="LRU"/>
+
+
+    <cache name="mycustom-cache-1"
+           maxBytesLocalHeap="40M"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="20"
+           overflowToDisk="true"
+           maxEntriesLocalDisk="1000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="120"
+           memoryStoreEvictionPolicy="LRU"/>
+
+    <cache name="mycustom-cache-2"
+           maxBytesLocalHeap="20M"
+           eternal="false"
+           timeToIdleSeconds="300"
+           timeToLiveSeconds="60"
+           overflowToDisk="true"
+           maxEntriesLocalDisk="1000"
+           diskPersistent="false"
+           diskExpiryThreadIntervalSeconds="120"
+           memoryStoreEvictionPolicy="LRU"/>
+</ehcache>
+
